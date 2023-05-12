@@ -1,0 +1,22 @@
+.error-indicator {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-indicator-wrapper {
+  color: rgb(95, 33, 32);
+  background-color: rgb(253, 237, 237);
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin: 26px;
+  text-align: center;
+}
+
+.error-indicator-row {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

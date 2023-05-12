@@ -1,0 +1,112 @@
+@import 'shared/modal.css';
+@import 'shared/loading-indicator.css';
+@import 'shared/error-indicator.css';
+
+@import 'pages/pet-list-page.css';
+@import 'pages/edit-pet-modal.css';
+@import 'pages/delete-pet-modal.css';
+
+body {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: #e7ebf0;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+main {
+  width: calc(95vw - 10px);
+
+  margin-top: 20px;
+  height: calc(100vh - 40px);
+
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 850px) {
+  main {
+    max-width: 800px;
+    width: 800px;
+  }
+}
+
+hr {
+  margin: 0;
+  border-width: 0 0 thin;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 10px;
+}
+
+.custom-button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  min-width: 64px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 118, 210);
+  box-shadow: rgb(0 0 0 / 20%) 0 3px 1px -2px, rgb(0 0 0 / 14%) 0 2px 2px 0, rgb(0 0 0 / 12%) 0 1px 5px 0;
+}
+
+.custom-button:disabled {
+  opacity: 0.35;
+  pointer-events: none;
+  cursor: default;
+}
+
+.warningButton {
+  background-color: rgb(255 124 0);
+}
+
+.errorButton {
+  background-color: rgb(255, 0, 0);
+}
+
+.grayButton {
+  background-color: gray;
+}
+
+.blueButton {
+  background-color: rgb(0 109 255);
+}
+
+.success-button {
+  background-color: #2e7d32;
+}

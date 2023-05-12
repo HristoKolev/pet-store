@@ -1,0 +1,52 @@
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.notes-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-pet-modal {
+  min-width: calc(90vw - 40px);
+  min-height: 475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 650px) {
+  .edit-pet-modal {
+    min-width: 568px;
+  }
+}
+
+.edit-pet-modal .button-group {
+  margin-top: 25px;
+}
+
+.pet-form {
+  width: 100%;
+}
+
+.pet-form label {
+  display: flex;
+}
+
+.form-input {
+  flex: 1 auto;
+}
+
+.form-input[type='checkbox'] {
+  flex: initial;
+}
+
+.form-input:not(textarea) {
+  margin-left: 10px;
+}
+
+.form-title {
+  text-align: center;
+}

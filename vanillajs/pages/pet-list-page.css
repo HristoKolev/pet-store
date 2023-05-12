@@ -1,0 +1,130 @@
+.pet-list-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.pet-list-page-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.add-pet-button {
+  height: 31px;
+}
+
+.no-items-label {
+  font-size: 1.3rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+}
+
+.table-wrapper {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 20%) 0 2px 1px -1px, rgb(0 0 0 / 14%) 0 1px 1px 0, rgb(0 0 0 / 12%) 0 1px 3px 0;
+  width: 100%;
+  overflow-x: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  min-width: 650px;
+}
+
+.custom-table-header {
+  display: table-header-group;
+}
+
+.custom-table-header-row {
+  color: inherit;
+  display: table-row;
+  vertical-align: middle;
+  outline: 0;
+}
+
+.custom-table-header-first-cell {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  text-align: left;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  width: 17px;
+}
+
+.custom-table-body {
+  display: table-row-group;
+}
+
+.custom-table-row {
+  color: inherit;
+  display: table-row;
+  vertical-align: middle;
+  outline: 0;
+}
+
+.custom-table-first-cell {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  text-align: left;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.custom-table-cell {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  flex-direction: row-reverse;
+}
+
+.custom-table-header-cell {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  text-align: left;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  flex-direction: row-reverse;
+}
+
+.edit-row-header,
+.delete-row-header {
+  width: 98px;
+}

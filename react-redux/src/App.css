@@ -1,0 +1,16 @@
+.pet-list-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.pet-list-page-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.add-pet-button {
+  height: 31px;
+}
