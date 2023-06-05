@@ -22,6 +22,10 @@ beforeEach(() => {
   server.resetHandlers();
 });
 
+afterEach(() => {
+  jest.restoreAllMocks();
+});
+
 afterAll(() => {
   server.close();
 });
@@ -398,8 +402,11 @@ test('cancel button resets the state successfully after failed update request', 
   });
 });
 
-// Doesn't work due to jsdom bug: https://github.com/jsdom/jsdom/issues/2898
-test.skip('will not submit data if input validation fails', async () => {
+test('will not submit data if input validation fails', async () => {
+
+  const reportValidityMock = jest.spyOn(HTMLFormElement.prototype, 'reportValidity');
+  reportValidityMock.mockImplementation(() => false);
+
   const user = userEvent.setup();
 
   await renderEditModal();

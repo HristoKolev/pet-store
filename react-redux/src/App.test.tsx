@@ -89,7 +89,7 @@ test('shows a message when there are no pets', async () => {
 
   expect(within(table).queryAllByRole('row', { name: 'Pet' })).toHaveLength(0);
 
-  expect(screen.getByText('No items.'));
+  expect(screen.getByText('No items.')).toBeInTheDocument();
 });
 
 test('view / edit button brings up the details modal', async () => {
@@ -109,7 +109,7 @@ test('view / edit button brings up the details modal', async () => {
   await user.click(editButton);
 
   await waitFor(() => {
-    expect(screen.getByRole('dialog', { name: 'View / Edit pet modal' }));
+    expect(screen.getByRole('dialog', { name: 'View / Edit pet modal' })).toBeInTheDocument();
   });
 });
 
@@ -130,7 +130,7 @@ test('delete button brings up the delete modal', async () => {
   await user.click(deleteButton);
 
   await waitFor(() => {
-    expect(screen.getByRole('dialog', { name: 'Delete pet modal' }));
+    expect(screen.getByRole('dialog', { name: 'Delete pet modal' })).toBeInTheDocument();
   });
 });
 
@@ -191,7 +191,7 @@ test('add buttons brings up the add modal', async () => {
   await user.click(addButton);
 
   await waitFor(() => {
-    expect(screen.getByRole('dialog', { name: 'Add pet modal' }));
+    expect(screen.getByRole('dialog', { name: 'Add pet modal' })).toBeInTheDocument();
   });
 });
 

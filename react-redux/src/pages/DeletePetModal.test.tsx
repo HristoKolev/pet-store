@@ -57,7 +57,7 @@ const renderDeleteModal = async () => {
 test('shows heading and pet data', async () => {
   await renderDeleteModal();
 
-  expect(screen.getByRole('dialog', { name: 'Delete pet modal' }));
+  expect(screen.getByRole('dialog', { name: 'Delete pet modal' })).toBeInTheDocument();
 
   expect(screen.getByRole('heading')).toHaveTextContent('Are you sure you want to delete this pet?');
 

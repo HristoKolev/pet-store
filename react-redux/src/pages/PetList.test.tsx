@@ -38,7 +38,7 @@ test('shows a message when there are no pets', async () => {
 
   expect(within(table).queryAllByRole('row', { name: 'Pet' })).toHaveLength(0);
 
-  expect(screen.getByText('No items.'));
+  expect(screen.getByText('No items.')).toBeInTheDocument();
 });
 
 test('row shows pet list item data', async () => {

@@ -40,7 +40,7 @@ export const App = memo((): JSX.Element => {
     setEditPetId(undefined);
     setShowEditModal(false);
     dispatch(globalActions.clearSelectedPet());
-  }, []);
+  }, [dispatch]);
 
   const handleOnAddClick = useCallback(() => {
     setEditPetId(undefined);
